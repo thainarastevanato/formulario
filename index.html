@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Formulário Personalisado</title>
+	</head>
+	<body>
+		<section class="formulario">
+			<div class="box">
+				<h2 class="titulo">ENTRE EM CONTATO<span>.</span></h2>
+
+				<form action="https://api.staticforms.xyz/submit" method="POST">
+					<label> NOME: </label>
+					<input
+						type="text"
+						name="name"
+						placeholder="DIGITE SEU NOME COMPLETO:"
+						required
+					/>
+
+					<label> E-MAIL: </label>
+					<input
+						type="email"
+						name="email"
+						placeholder="DIGITE SEU E-MAIL:"
+						required
+					/>
+
+					<label> TELEFONE: </label>
+					<input
+						type="text"
+						name="phone"
+						placeholder="DIGITE SEU TELEFONE:"
+					/>
+
+					<label> MENSAGEM: </label>
+					<textarea
+						name="message"
+						cols="30"
+						rows="5"
+						placeholder="DIGITE SUA MENSAGEM:"
+						required
+					></textarea>
+					<button class="btn-enviar" type="submit">ENVIAR</button>
+					<input
+						type="hidden"
+						name="accessKey"
+						value="53254642-b764-4b8f-b640-0f2da7094eb4"
+					/>
+					<input
+						type="hidden"
+						name="redirectTo"
+						value="http://127.0.0.1:5500/thanks.html"
+					/>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
